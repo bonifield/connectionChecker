@@ -31,6 +31,7 @@ add the line
 ```
 
 ### to check your logs
+- pair these with a simple Flask server on your own home network, or roll your own solution to send the logs somewhere (add your own fields!) and/or summarize them using visualizations
 ```
 awk '{print $2,$3}' /var/log/pinglog/pinglog.log | sort | uniq -c | sort -nrk1 | sed -e 's/^ \+//g'
 or just the up/down counts
