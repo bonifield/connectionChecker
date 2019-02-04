@@ -7,7 +7,7 @@ check your ISP reliability with various scripts
 sudo mkdir /var/log/pinglog
 sudo chown username:groupname /var/log/pinglog
 ```
-- add logrotate options:  keep for 30 days, rotate daily, compress old logs, set 0640 perms
+- add logrotate options:  keep for 30 days, rotate daily, compress old logs, set 0644 perms
 ```
 sudo nano /etc/logrotate.conf
 ```
